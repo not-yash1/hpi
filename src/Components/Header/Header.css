@@ -1,0 +1,46 @@
+@import url('../../Fonts/style.css');
+
+.head-container {
+    /* border: 2px solid red; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PP Neue Montreal Book';
+    color: rgb(14, 40, 71);
+    /* padding: 5%; */
+    padding: 54px 60px 44px 80px;
+    gap: 8%;
+}
+
+.head-container .head-header {
+    /* border: 2px solid green; */
+    /* height: 20%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -4%;
+}
+
+.head-container .head-header h4 {
+    font-size: 18px;
+    letter-spacing: 1.44px;
+    /* word-spacing: 2px; */
+    font-weight: 400;
+    font-style: normal;
+    line-height: 105%;
+    margin-bottom: 4px;
+}
+
+.head-container .head-header h1 {
+    font-size: 60px;
+    letter-spacing: -0.6px;
+    /* word-spacing: 2px; */
+    line-height: 105%;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-style: normal;
+}

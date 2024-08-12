@@ -1,0 +1,209 @@
+@import url('../../Fonts/style.css');
+
+.review-contain {
+    /* border: 2px solid red; */
+    height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    scroll-behavior: smooth;
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 52px 57px; */
+    margin-bottom: 100px;
+    overflow-x: hidden;
+}
+
+.review-contain .rev-box {
+    position: relative;
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.5% 4%;
+    padding: 52px 0px;
+    /* overflow-x: hidden; */
+}
+
+.review-contain .review-box {
+    /* border: 2px solid green; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 52px 57px;
+    transition: transform 1s ease;
+}
+
+.review-contain .rev-box .box2 {
+    /* border: 2px solid red; */
+    left: 100vw;
+}
+
+.review-contain .rev-box .box3 {
+    /* border: 2px solid red; */
+    left: 200vw;
+}
+
+.review-contain .review-box .btns {
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .review-contain .review-box .left {
+    width: 7%;
+} */
+
+.review-contain .review-box .left button {
+    margin-left: -40%;
+}
+
+.review-contain .review-box .right button {
+    margin-right: -40%;
+}
+
+.review-contain .review-box .btns button {
+    border: 2px solid rgb(14, 40, 71);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-contain .review-box .btns .disable {
+    border: 2px solid rgba(14, 40, 71, 0.4) !important;
+}
+
+.review-contain .review-box .img {
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 34%;
+    background: rgba(209, 222, 225, 0.19);
+}
+
+.review-contain .review-box .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.review-contain .review-box .cont {
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* text-align: left; */
+    /* padding: 6.7% 8.7%; */
+    padding: 50px;
+    padding-top: 120px;
+    gap: 7.8%;
+    background: rgba(209, 222, 225, 0.19);
+}
+
+.review-contain .review-box .cont img {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    /* top: 6.7%;
+    left: 8.7%; */
+    background: none;
+}
+
+.review-contain .review-box .cont p {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    color: rgba(14, 40, 71, 0.70);
+    font-family: "PP Neue Montreal Book";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 42px */
+    letter-spacing: -0.6px;
+    background: none;
+    margin-right: 30px;
+}
+
+.review-contain .review-box .cont .user {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+    background: none;
+    /* gap: 10px; */
+}
+
+.review-contain .review-box .cont .user h3 {
+    color: #0E2847;
+    text-align: center;
+    font-family: "PP Neue Montreal Book";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    text-align: left;
+    background: none;
+}
+
+.review-contain .review-box .cont .user h4 {
+    color: #0E2847;
+    text-align: center;
+    font-family: "PP Neue Montreal Book";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    background: none;
+}
+
+.review-contain .rev-box .rev-navigation {
+    /* border: 2px solid lightblue; */
+    position: absolute;
+    z-index: 5;
+    top: 85vh;
+    left: 20vw;
+    height: 10vh;
+    width: 60vw;
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    gap: 1.5%;
+    /* transform: translateX(-50%); */
+  }
+  
+  .review-contain .rev-box .rev-navigation .rev-btn {
+    /* border: 2px solid brown; */
+    background: rgba(14, 40, 71, 0.2);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    /* cursor: pointer; */
+  }
+  
+  .review-contain .rev-box .rev-navigation .rev-btn:hover {
+    cursor: pointer;
+  }
+  
+  .rev-navigation  .vis-nav {
+    background: rgb(14, 40, 71) !important;
+  }

@@ -1,0 +1,39 @@
+@import url('../../Fonts/style.css');
+
+.disc-contain {
+    /* border: 2px solid red; */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+}
+
+.disc-contain .disc-header {
+    /* border: 2px solid green; */
+    margin: 0 40px;
+    width: fit-content;
+    font-family: 'PP Neue Montreal Book';
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.disc-contain .disc-header h2 {
+    /* border: 2px solid yellow; */
+    font-size: 60px;
+    letter-spacing: -1px;
+    line-height: 105%;
+    color: transparent;
+    color: rgb(14, 40, 71);
+    font-weight: 400;
+}
+
+.disc-contain .disc-header h3 {
+    /* border: 2px solid yellow; */
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 105%;
+    color: rgba(14, 40, 71, 0.5);
+    font-weight: 400;
+    line-height: 150%;
+}

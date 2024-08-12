@@ -1,0 +1,140 @@
+@import url('../../Fonts/style.css');
+
+.contact-contain {
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.contact-contain .contact-header {
+    /* border: 2px solid green; */
+    margin: 40px 40px;
+    width: fit-content;
+    font-family: 'PP Neue Montreal Book';
+}
+
+.contact-contain .contact-header h1 {
+    /* border: 2px solid yellow; */
+    font-size: 90px;
+    letter-spacing: -1px;
+    /* word-spacing: 4px; */
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.contact-contain .contact-header h2 {
+    /* border: 2px solid yellow; */
+    font-size: 90px;
+    letter-spacing: -1px;
+    word-spacing: 4px;
+    font-weight: 600;
+    line-height: 105%;
+    /* background: linear-gradient(to right, #C6896F, #B0844E); */
+    color: transparent;
+    display: inline-block;
+    background: linear-gradient(90deg, #D3AF78 0%, #8F6B40 49.5%, #D3AF78 96.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-contain .contact-form {
+    /* border: 2px solid green; */
+    margin: 0px 40px;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+
+.contact-contain .contact-form .form-details {
+    /* border: 2px solid aqua; */
+    display: flex;
+    gap: 5%;
+    height: 20%;
+    margin-top: 1%;
+}
+
+.contact-contain .contact-form .form-msg {
+    /* border: 2px solid aqua; */
+    /* display: flex;
+    gap: 10%; */
+    height: 20%;
+}
+
+.contact-contain .contact-form input {
+    width: 35%;
+    height: 80%;
+    border-radius: 50px;
+    /* padding-left: 20px; */
+    padding: 24px;
+    border: 1px solid #D1DEE1;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06); */
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.contact-contain .contact-form input:focus {
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.contact-contain .contact-form input::placeholder {
+    /* border: 2px solid pink; */
+    margin-left: 60px;
+}
+
+.contact-contain .contact-form .form-msg input {
+    width: 75%;
+}
+
+.contact-contain .contact-form .form-btn {
+    /* border: 2px solid aqua; */
+    height: 20%;
+    margin-top: 1%;
+}
+
+.contact-contain .contact-form .form-btn button {
+    width: 35%;
+    height: 80%;
+    border-radius: 50px;
+    text-align: left;
+    background-color: rgb(14, 40, 71);
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 3%; */
+    padding: 12px 10px 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-contain .contact-form .form-btn .disable-btn {
+    cursor: not-allowed;
+    background-color: rgba(14, 40, 71, 0.7);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-contain .contact-form .form-btn button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-contain .contact-form .form-btn button:active {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.12);
+    transform: translateY(2px);
+}
+
+.contact-contain .contact-form .form-btn p {
+    /* border: 2px solid violet; */
+    width: fit-content;
+    background: none;
+    font-size: 18px;
+}
+

@@ -1,0 +1,569 @@
+@import url('../../Fonts/style.css');
+
+.prop-container {
+    /* border: 2px solid red; */
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    font-family: 'PP Neue Montreal Book';
+    background: rgba(230, 232, 238, 0.38);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.blur::after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+
+.prop-container .prop-header {
+    /* border: 2px solid green; */
+    height: 10%;
+    text-align: center;
+    width: 100%;
+    color: rgb(14, 40, 71);
+    margin-bottom: 1%;
+    font-family: 'PP Neue Montreal Book';
+    background: none;
+    margin-bottom: 60px;
+}
+
+.prop-container .prop-header h4 {
+    /* border: 2px solid green; */
+    color: rgba(14, 40, 71, 1);
+    font-family: 'PP Neue Montreal Book';
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+    letter-spacing: 1.44px;
+    background: none;
+}
+
+.prop-container .prop-header h1 {
+    font-size: 60px;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+    line-height: 105%;
+    background: none;
+}
+
+.prop-container .prop-caraousel {
+    /* border: 2px solid brown; */
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    background: none;
+}
+
+.prop-container .prop-caraousel .left-btn {
+    /* border: 2px solid blue; */
+    width: 2%;
+    margin-right: -60px;
+    background: none;
+}
+
+.prop-container .prop-caraousel .righ-btn {
+    /* border: 2px solid blue; */
+    margin-left: -30px;
+    width: 2%;
+    background: none;
+}
+
+.prop-container .prop-caraousel button {
+    width: 4%;
+    position: absolute;
+    z-index: 10;
+    margin-top: -10px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 25px 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    color: white;
+    top: 46%;
+}
+
+.prop-container .prop-caraousel .btns {
+    height: 8%;
+    width: 4.2%;
+    border-radius: 50%;
+    padding-top: 5%;
+}
+
+.prop-container .prop-caraousel .left-arrow {
+    left: 0;
+    padding: 0;
+}
+
+.prop-container .prop-caraousel .right-arrow {
+    right: 0;
+    padding: 0;
+}
+
+.prop-container .prop-caraousel .caraousel-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.prop-container .prop-caraousel .caraousel-track {
+    /* border: 2px solid pink; */
+    display: flex;
+    transition: transform 0.5s ease;
+    /* overflow: scroll; */
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: none;
+    padding-left: 40px;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item {
+    /* border: 2px solid pink; */
+    flex: 0 0 40%;
+    margin-right: 1%;
+    margin-left: 1%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    position: relative;
+    background: none;
+    gap: 20px;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .caraousel-img {
+    border: 2px solid yellow;
+    padding: 0px 20px;
+    height: 95%;
+    width: 100%;
+    /* border-radius: 20px; */
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: hidden;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .caraousel-img::before {
+    /* border: 2px solid red; */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 87.5%;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.8);  */
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 1s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .caraousel-img:hover::before {
+    backdrop-filter: blur(3px); 
+    /* Adjust blur amount as needed */
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item:nth-child(1) .caraousel-img {
+    background: url('../../images/img25.jpg') lightgray 50% / cover no-repeat;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item:nth-child(2) .caraousel-img {
+    background: url('../../images/img3.jpg') lightgray 50% / cover no-repeat;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item:nth-child(3) .caraousel-img {
+    background: url('../../images/img24.jpg') lightgray 47% / cover no-repeat;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text {
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 95%;
+    position: relative;
+    top: 100%;
+    white-space: nowrap;
+    transition: top 2s ease;
+    z-index: 2;
+    pointer-events: none;
+    /* top: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    padding: 4% 0;
+    margin-left: 2%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .header-btn {
+    /* border: 2px solid green; */
+    position: relative;
+    height: 10%;
+    top: 107%;
+    white-space: nowrap;
+    transition: top 3s ease;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    background: none;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .header-btn .top-btn {
+    /* border: 2px solid yellow; */
+    width: fit-content;
+    width: 50%;
+    display: flex;
+    gap: 4%;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: rgb(14, 40, 71);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .header-btn .top-btn h5 {
+    /* border: 2px solid aqua; */
+    letter-spacing: -0.2px;
+    word-spacing: 2px;
+    font-weight: 500;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item:hover .hover-text {
+    top: 0%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item:hover .header-btn {
+    top: 0%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 70%;
+    background: none;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .main-content {
+    /* border: 2px solid yellow; */
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: flex-end;
+    width: 100%;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .main-content .cont{
+    background: none;
+    /* border: 2px solid blue; */
+    margin-left: 2%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .main-content .content1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .main-content .content1 .wrap-cont {
+    display: flex;
+    background: none;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .main-content .cont h2 {
+    font-size: 40px;
+    background: none;
+    letter-spacing: -0.4px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .main-content .cont h3 {
+    font-weight: 400;
+    font-size: 23px;
+    background: none;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .main-content .cont h4 {
+    font-weight: 400;
+    font-size: 20px;
+    background: none;
+    letter-spacing: -0.2px;
+    line-height: 150%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .foot-btns {
+    /* border: 2px solid yellow; */
+    position: relative;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    top: -100%;
+    white-space: nowrap;
+    transition: top 3s ease;
+    /* gap: 5%; */
+    justify-content: space-between;
+    align-items: center;
+    width: 110%;
+    margin-left: -5%;
+    background: none;
+    position: relative;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item:hover .hover-text .content .foot-btns {
+    top: 0%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .foot-btns .fbtns {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    background: none;
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0.4% 2%;
+    text-align: center;
+    color: #FFFFFF;
+    background: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+    font-weight: 400;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .foot-btns .fbtns:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .foot-btns .fbtns:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .foot-btns .left-btn {
+    width: 50%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .hover-text .content .foot-btns .right-btn {
+    width: 40%;
+}
+
+.prop-container .prop-caraousel .caraousel-track .caraousel-item .caraousel-img-name {
+    /* border: 2px solid yellow; */
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background: none;
+    color: #0E2847;
+    font-family: "PP Neue Montreal Book";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* margin-bottom: 60px; */
+}
+
+.prop-container .modal {
+    display: flex;
+    /* border: 2px solid aqua; */
+    flex-direction: column;
+    height: 70vh;
+    width: 35vw;
+    z-index: 6;
+    position: absolute;
+    top: 40vh;
+    left: 32.5vw;
+    color: rgb(14, 40, 71);
+}
+
+.prop-container .modal .form-contain {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 96%;
+    justify-content: space-between;
+    margin: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.prop-container .modal .form-contain .form-header {
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.prop-container .modal .form-contain .form-header .header-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    padding-left: 8%;
+}
+
+.prop-container .modal .form-contain .form-header .header-text h1 {
+    width: fit-content;
+    font-size: 32px;
+    letter-spacing: -0.1px;
+    word-spacing: 2px;
+    line-height: 105%;
+    margin-bottom: 4px;
+}
+
+.prop-container .modal .form-contain .form-header .header-text h4 {
+    width: fit-content;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    /* word-spacing: 2px; */
+    font-weight: 400;
+    line-height: 80%;
+}
+
+.prop-container .modal .form-contain .form-header .close-icon {
+    /* border: 2px solid purple; */
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.prop-container .modal .form-contain .form-header .close-icon:hover {
+    cursor: pointer;
+}
+
+.prop-container .modal .form-contain .form-header .close-icon .close-btn {
+    border: none;
+}
+
+.prop-container .modal .form-contain .form-header .close-icon .close-btn:hover {
+    cursor: pointer;
+}
+
+.prop-container .modal .form-contain .form-details {
+    /* border: 2px solid brown; */
+    display: flex;
+    /* justify-content: center; */
+    height: 75%;
+    margin-left: 6%;
+}
+
+.prop-container .modal .form-contain .form-details form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 2%;
+    gap: 8%;
+    padding: 4% 0;
+}
+
+.prop-container .modal .form-contain .form-details form input {
+    width: 90%;
+    height: 80%;
+    border-radius: 50px;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06); */
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.prop-container .modal .form-contain .form-details form input:focus {
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.prop-container .modal .form-contain .form-details form input::placeholder {
+    margin-left: 60px;
+    font-family: 'PP Neue Montreal Book';
+}
+
+.prop-container .modal .form-contain .form-details form button {
+    /* width: 60%; */
+    width: 90%;
+    height: 80%;
+    border-radius: 50px;
+    text-align: left;
+    /* padding-left: 20px; */
+    padding: 12px 10px 12px 20px;
+    background-color: rgb(14, 40, 71);
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    border: none;
+    cursor: pointer;
+    font-family: 'PP Neue Montreal Book';
+}
+
+.prop-container .modal .form-contain .form-details form .disabled-btn {
+    background: rgba(14, 40, 71, 0.6);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: not-allowed;
+}
+
+.prop-container .modal .form-contain .form-details form button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.prop-container .modal .form-contain .form-details form button:active {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.12);
+    transform: translateY(2px);
+}
+
+.prop-container .modal .form-contain .form-details form button h4 {
+    background: none;
+    font-weight: 400;
+    margin-left: 5px;
+}

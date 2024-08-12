@@ -1,0 +1,181 @@
+@import url('../../Fonts/style.css');
+
+.blog-container {
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PP Neue Montreal Book';
+    color: rgb(14, 40, 71);
+}
+
+.blog-container .blog-left {
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blog-container .blog-left .left-header {
+    /* border: 2px solid blue; */
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+.blog-container .blog-left .left-header h2 {
+    color: rgba(14, 40, 71, 0.7);
+    font-family: "PP Neue Montreal Book";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: 1.8px;
+}
+
+.blog-container .blog-left .left-header h1 {
+    color: #0E2847;
+    font-family: "PP Neue Montreal Book";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -0.6px;
+}
+
+.blog-container .blog-left .left-body {
+    /* border: 2px solid blue; */
+    flex-grow: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 40px;
+    cursor: pointer;
+}
+
+.blog-container .blog-left .left-body .body-content {
+    /* border: 2px solid yellow; */
+    height: 33.33%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8%;
+    border-bottom: 2px dashed rgba(14, 40, 71, 0.1);
+    position: relative;
+}
+
+.blog-container .blog-left .left-body .body-content:hover {
+    cursor: pointer;
+}
+
+.blog-container .blog-left .left-body .body-con3 {
+    border: none;
+}
+
+.blog-container .blog-left .left-body .body-content h2 {
+    /* border: 2px solid green; */
+    word-spacing: 2px;
+    /* height: 100%; */
+    color: #0E2847;
+    font-family: "PP Neue Montreal Book";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    background: none;
+    z-index: 5;
+    /* margin-top: 50px; */
+}
+
+.blog-container .blog-left .left-body .body-content h1 {
+    position: absolute;
+    /* top: calc(50% - 50px); */
+    top: 15%;
+    left: 0;
+    /* color: rgba(14, 40, 71, 0.05);
+    color: rgb(250, 232, 207); */
+    font-family: "PP Neue Montreal Book";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%; /* 105px */
+    background: none;
+}
+
+.blog-container .blog-right {
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-container .blog-right .right-img {
+    /* border: 2px solid yellow; */
+    padding: 0px 20px;
+    height: 90%;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background: url('../../images/img1.jpg') lightgray 50% / cover no-repeat; */
+}
+
+.blog-container .blog-right .right-desc {
+    /* border: 2px solid aqua; */
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    padding: 0px 24px;;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 14px 34px -10px rgba(0, 0, 0, 0.10);
+}
+
+.blog-container .blog-right .right-desc h3 {
+    /* border: 2px solid red; */
+    word-spacing: 2px;
+    color: #0E2847;
+    text-align: center;
+    font-family: "PP Neue Montreal Book";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.56px;
+    background: none;
+}
+
+.blog-container .blog-right .right-desc h6 {
+    color: rgba(14, 40, 71, 0.80);
+    text-align: center;
+    font-family: "PP Neue Montreal Book";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    background: none;
+}

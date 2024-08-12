@@ -1,0 +1,114 @@
+
+
+.intro-container {
+    /* border: 2px solid red; */
+    /* background: rgb(0, 0, 0); */
+    background: rgb(255, 255, 255);
+    height: 80vh;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-bottom: 56px;
+    position: relative;
+    display: flex;
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+
+.intro-container button {
+    position: absolute;
+    z-index: 10;
+    /* background: rgba(0, 0, 0, 0.9); */
+    background: none;
+}
+
+.intro-container .intro-box {
+    /* position: relative; */
+    /* border: 2px solid blue; */
+    width: 220vw;
+    gap: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    transition: transform 1s ease;
+    /* overflow-x: hidden; */
+}
+
+.intro-container img {
+    background: none;
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    z-index: 5;
+}
+
+.intro-container .intro-box .logo {
+    background: none;
+    position: absolute;
+    top: 8%;
+    left: 124vw;
+    z-index: 5;
+}
+
+.intro-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    /* border: 2px solid yellow; */
+    /* height: 100%; */
+    width: 100vw;
+    cursor: pointer;
+    color: white;
+}
+
+.intro-container .intro-box .vid2 {
+    margin-left: 20vw;
+    left: 100vw;
+}
+
+.intro-container button {
+    border: 0.5px solid #F7F7F7;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    height: 50px;
+    width: 30px;
+    border-radius: 5%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    /* background: rgba(240, 240, 240, 0.7); */
+    background: rgba(255, 245, 230, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.intro-container button:hover {
+    cursor: pointer;
+}
+
+.intro-container button:focus {
+    outline: none;
+}
+
+.intro-container .lef-btn {
+    left: 5%;
+    top: 50%;
+}
+
+.intro-container .righ-btn {
+    right: 2%;
+    top: 50%;
+}
+
+.intro-container:hover .lef-btn,
+.intro-container:hover .righ-btn {
+    opacity: 1; /* Make buttons visible */
+}
+
+.intro-container .vis-btn {
+    opacity: 0 !important;
+}
